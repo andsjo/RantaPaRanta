@@ -11,10 +11,10 @@ REM
 REM ------- Project settings and setup --------
 REM --- Move to working directory (compiled output )---
 H:
-cd \as\GitHub\Ranta\Projekt-ranta\Compiled-output\
+cd \as\Projekt\GitProj\Ranta\Git-filer\Ranta\Build-script\
 REM
 REM --- Set the common basic path which is equal for all C-code subdiretories ---
-SET MY_C_PATH=H:\as\GitHub\Ranta\Projekt-ranta\Source-Code\
+SET MY_C_PATH=H:\as\Projekt\GitProj\Ranta\Git-filer\Ranta\Source-Code\
 REM --- Set CPATH to all necessary source code directorys ---
 SET CPATH=%CPATH%;%MY_C_PATH%Include-common\;%MY_C_PATH%Module-Main\Include-main\;%MY_C_PATH%Module-Tabell\Include-tabell\;%MY_C_PATH%Module-Inmatning\Include-inmatning\;%MY_C_PATH%Module-Kalkylator\Include-kalkylator\
 
