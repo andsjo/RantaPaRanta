@@ -19,6 +19,7 @@ SET MY_C_PATH=H:\as\Projekt\RantaPaRanta\Ranta\Source-Code\
 SET MY_PRJ_PATH=H:\as\Projekt\RantaPaRanta\
 REM --- Set CPATH to all necessary source code directorys ---
 SET CPATH=%CPATH%;%MY_C_PATH%Include-common\;%MY_C_PATH%Module-Main\Include-main\;%MY_C_PATH%Module-Tabell\Include-tabell\;%MY_C_PATH%Module-Inmatning\Include-inmatning\;%MY_C_PATH%Module-Kalkylator\Include-kalkylator\
-
-
-
+REM
+REM
+REM --- Setting path to testing framework so it can be used in all C-code subdiretories ---
+SET CPATH=%CPATH%;Module-CuTest\

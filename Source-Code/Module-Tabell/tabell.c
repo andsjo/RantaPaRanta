@@ -1,3 +1,5 @@
+#include "CuTest.h"
+
 #include "tabell.h"
 
 static double NastaAr( double kapital );
@@ -29,8 +31,24 @@ void TabellPaSkarmen( double kapital, int antalAr   )
 static double NastaAr( double x ) {
 
 	if ( x > 0 )
-		x = x * ( 1 + ranteFaktor );          /* denna */
+		x = x * ( 1 + ranteFaktor );          /* denna OBS! inte snyggt - sidoeffekt*/
 	else 	x = x * 1/( 1 + RANTESATS/100 );   /* eller denna */
 
 	return x ;
 }
+/* bygger test till function NastaAr
+
+void Test-NastaAr(CuTest *tc){
+	double input = 10;
+	double actual = NastaAr(input)
+	double expected = x * ( 1 + ranteFaktor ); 
+	CuAssertDblEquals(tc,expected,actual,0.01)
+}
+
+CuSuite* Tabell-GetTestSuite(){
+	CuSuite* suite=CuSuiteNew();
+	SUITE_ADD_TEST(suit, Test-NastaAr);
+	reurn suite;
+}
+
+*/
