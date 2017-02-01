@@ -9,6 +9,6 @@
 #if !defined(main_h)
 	#define main_h
 
-	const double ranteFaktor = RANTESATS / 100;
+	const double ranteFaktor = RANTESATS / 100; 	/* Preprocessor - inte bra! definierar ranteFaktor dekl i ranta.h */
 
 #endif

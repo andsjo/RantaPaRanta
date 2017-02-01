@@ -4,16 +4,20 @@
 
 #include "CuTest.h"
 
+/* from example 
 CuSuite* CuGetSuite();
 CuSuite* CuStringGetSuite();
+*/
+
+CuSuite* Tabell_GetTestSuite();
 
 void RunAllTests(void)
 {
 	CuString *output = CuStringNew();
 	CuSuite* suite = CuSuiteNew();
 
-	CuSuiteAddSuite(suite, Tabell-GetTestSuite());
-	CuSuiteAddSuite(suite, CuStringGetSuite());
+	CuSuiteAddSuite(suite, Tabell_GetTestSuite());
+	/* CuSuiteAddSuite(suite, CuStringGetSuite()); from example */
 
 	CuSuiteRun(suite);
 	CuSuiteSummary(suite, output);
@@ -29,6 +33,5 @@ int main(void)
 /*
 Kompilera allt med 
 gcc AllTests.c CuTest.c Tabell.c
-
 exekvera progam med tester a.out eller om exe-filen är namngiven på annat sätt
 */

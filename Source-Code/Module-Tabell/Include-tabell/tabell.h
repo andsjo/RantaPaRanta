@@ -5,7 +5,7 @@
 #if !defined(tabell_h)
 	#define tabell_h
 
-   #define	ABS( x )	( (x) > 0 ? (x) : -(x) )
+   #define	ABS( x )	( (x) > 0 ? (x) : -(x) )			/* ej bra, görs som exempel */
 	void TabellPaSkarmen( double kapital, int antalAr );
 
 #endif

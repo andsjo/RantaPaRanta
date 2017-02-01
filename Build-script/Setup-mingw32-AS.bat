@@ -22,4 +22,4 @@ SET CPATH=%CPATH%;%MY_C_PATH%Include-common\;%MY_C_PATH%Module-Main\Include-main
 REM
 REM
 REM --- Setting path to testing framework so it can be used in all C-code subdiretories ---
-SET CPATH=%CPATH%;Module-CuTest\
+SET CPATH=%CPATH%;%MY_C_PATH%Module-CuTest\
