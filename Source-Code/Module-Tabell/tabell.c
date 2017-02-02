@@ -3,7 +3,7 @@
 #include "CuTest.h"
 #include "tabell.h"
 
-#define TestaDennaFilEnbart 1 /* 1 true 0 false*/
+#define TestaDennaFilEnbart 0 /* 1 true 0 false*/
 
 #if TestaDennaFilEnbart
 
@@ -48,7 +48,7 @@ static double NastaAr( double x ) {
 }
 
 #if TestaDennaFilEnbart
-/* ------------bygger tester till funktion NastaAr -------------- */
+/* ------------bygger unit-test till funktion NastaAr -------------- */
 
 void Test_NastaAr(CuTest *tc){
 	double input = 10;
