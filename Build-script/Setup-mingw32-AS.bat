@@ -10,13 +10,13 @@ SET CPATH=C:\TPFAPPS\egcs\i386-mingw32\include\
 SET LIBRARY_PATH=C:\TPFAPPS\egcs\i386-mingw32\lib\
 REM 
 REM ------- Project settings and setup --------
-REM --- Move to working directory (compiled output )---
-H:
-cd \as\Projekt\RantaPaRanta\Ranta\Build-script\
 REM
-REM --- Set the common basic path which is equal for all C-code subdiretories ---
-SET MY_C_PATH=H:\as\Projekt\RantaPaRanta\Ranta\Source-Code\
-SET MY_PRJ_PATH=H:\as\Projekt\RantaPaRanta\
+REM ----- Set path to project root directory -----
+SET MY_PRJ_PATH=H:\as\Projekt\RantaPaRantaMin\
+REM
+REM --- Set root path for all C-code and subdiretories ---
+SET MY_C_PATH=%MY_PRJ_PATH%\Ranta\Source-Code\
+
 REM --- Set CPATH to all necessary source code directorys ---
 SET CPATH=%CPATH%;%MY_C_PATH%Include-common\;%MY_C_PATH%Module-Main\Include-main\;%MY_C_PATH%Module-Tabell\Include-tabell\;%MY_C_PATH%Module-Inmatning\Include-inmatning\;%MY_C_PATH%Module-Kalkylator\Include-kalkylator\
 REM
