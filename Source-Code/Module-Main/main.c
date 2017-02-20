@@ -21,7 +21,7 @@ int main( void ) {
 		printf("\nUpprepa programmet? (j/n) --> ");
 		scanf(" %c", &upprepa);
  	} 
-   printf("\nSLUT");
+	printf("\nSLUT");
 
 	return 0;
 }
