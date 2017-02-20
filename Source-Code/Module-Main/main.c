@@ -1,5 +1,6 @@
 /* main.c */
-/* Developer as@kth.se */
+/* Developer MrsRead */
+
 #include "main.h" 
 
 int main( void ) {
