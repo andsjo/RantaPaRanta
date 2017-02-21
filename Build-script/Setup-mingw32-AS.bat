@@ -1,10 +1,12 @@
+
 REM
 REM replace c:\egcs-1.1.2 with whatever your installation root may be.
 REM GCC_EXEC_PREFIX is optional, but having it here doesn't hurt.
 REM
 REM - Compiler settings on this computer -
-PATH=%PATH%;C:\TPFAPPS\egcs\bin\egcs\bin
-PATH=%PATH%;C:\TPFAPPS\egcs\lib\gcc-lib\i386-mingw32\egcs-2.91.66
+SET ORI_PATH = %PATH% 
+PATH=%PATH%;C:\TPFAPPS\egcs\bin\egcs\bin\
+PATH=%PATH%;C:\TPFAPPS\egcs\lib\gcc-lib\i386-mingw32\egcs-2.91.66\
 SET GCC_EXEC_PREFIX=c:\TPFAPPS\egcs\lib\gcc-lib\
 SET CPATH=C:\TPFAPPS\egcs\i386-mingw32\include\
 SET LIBRARY_PATH=C:\TPFAPPS\egcs\i386-mingw32\lib\
